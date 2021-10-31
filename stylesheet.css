@@ -1,0 +1,108 @@
+body {
+  background: black;
+  color: white;
+  text-align: center;
+  background-image: url("media/stars.gif");
+
+  cursor: url("/media/daisy.png");
+
+/* cursor: url(/media/bloodborder.gif), auto */
+}
+
+h1,
+h3 {
+  /* animation: crazy 0.8s; */
+  /* animation-iteration-count: infinite; */
+
+  -webkit-border-image: url("media/bloodborder.gif") 20% round; /* Safari from 3.1 to 5 */
+  -o-border-image: url("media/bloodborder.gif") 20% round; /* Opera from 11 to 12.1 */
+  border-image: url("media/bloodborder.gif") 20% round; /* Chrome from 49 */
+}
+
+@keyframes crazy {
+  0% {
+    filter: drop-shadow(50px 16px 20px red) invert(0%);
+  }
+  50% {
+    filter: drop-shadow(500px 500px 500px red) invert(100%);
+  }
+  100% {
+    filter: drop-shadow(16zx 16px 20px red) invert(0%);
+  }
+}
+
+.spin {
+  animation: spin 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+
+.spin:hover {
+    animation: spin 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#hangingSpider {
+    animation: hangingSpider 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+
+@keyframes hangingSpider {
+    0% {
+        top: 530px;
+    }
+    50% {
+        top: 640px;
+    }
+    62.5% {
+        top: 645px;
+    }
+    75% {
+        top: 640px;
+    }
+    100% {
+        top: 530px;
+    }
+}
+
+.col {
+  float: left;
+  /* width: 50%; */
+}
+
+.right iframe {
+  display: block;
+  width: 100%;
+}
+
+#yt-player {
+  transform: scale(1.2);
+}
+
+.mobile {
+  position: absolute;
+}
+
+img {
+  /* display: flex; */
+  align-items: center;
+  overflow-x: scroll;
+}
+
+img > div {
+  flex: none;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
