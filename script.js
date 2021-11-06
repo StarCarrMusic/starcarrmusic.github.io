@@ -18,5 +18,9 @@ function makeDraggable() {
   }, 1);
 }
 
+function playAudio(url) {
+  new Audio(url).play();
+}
+
 scroll();
 makeDraggable();
