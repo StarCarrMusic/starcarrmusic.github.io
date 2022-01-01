@@ -1,6 +1,6 @@
 var space = " ";
 var pos = 0;
-var msg = "Star Carr - Dead or Deep Sleep - ";
+var msg = "Star Carr - Sue's Fear Blue Drear New Year - ";
 
 function scroll() {
   document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
